@@ -1,0 +1,8 @@
+{
+  "name": "viktor/my-php-appt",
+  "description": "Your PHP project description",
+  "minimum-stability": "dev",
+  "require": {
+    "prometheus/client_php": "^2.0"
+  }
+}
