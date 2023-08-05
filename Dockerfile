@@ -2,7 +2,7 @@ FROM php:7.1.0-fpm-alpine
 ENV DEBIAN_FRONTEND noninteractive
 RUN  docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mysql
 
-COPY ./PHP_project /var/www
+COPY . /var/www
 
 #FROM nginx:latest
 
