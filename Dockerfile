@@ -4,7 +4,7 @@ RUN  docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_my
 
 COPY . /var/www
 
-#FROM nginx:latest
+FROM nginx:latest
 
 EXPOSE 80
 
@@ -17,4 +17,4 @@ COPY ./your-mysql-config /etc/mysql/conf.d/
 EXPOSE 3306
 
 CMD ["mysqld"]
-#FROM mysql:5.7
+FROM mysql:5.7
