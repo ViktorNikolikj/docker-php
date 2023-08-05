@@ -6,8 +6,8 @@ COPY . /var/www
 
 FROM nginx:latest
 
-EXPOSE 80
-EXPOSE 8080
+# EXPOSE 80
+# EXPOSE 8080
 
 CMD ["sh", "-c", "php-fpm & nginx -g 'daemon off;'"]
 
