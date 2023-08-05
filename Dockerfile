@@ -12,7 +12,7 @@ CMD ["sh", "-c", "php-fpm & nginx -g 'daemon off;'"]
 
 
 
-COPY ./your-mysql-config /etc/mysql/conf.d/
+#COPY ./your-mysql-config /etc/mysql/conf.d/
 
 EXPOSE 3306
 
